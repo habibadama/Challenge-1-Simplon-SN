@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #fafafa; 
+}
+.logo img{
+    width: 150px;
+}
+.btn{
+    display: inline-block;
+    padding: 6px 14px;
+    color: #fff;
+    background-color: #ce0033;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0;
+    color: #ce0033;
+}
+header{
+    position: fixed;
+    top: 0; 
+    z-index: 99;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+header nav ul li:not(:last-child){
+    display: inline-block;
+    margin-right: 50px;
+}
+header nav ul li a{
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+header nav ul li a:hover{
+    border-bottom: 5px solid #ce0033;
+    padding-bottom: 34px;
+    color: #ce0033;
+}
+header nav ul li .fa-solid{
+    cursor: pointer;
+} 
+
+/* Section banner */
+
+#banner{
+    padding-top: 100px;
+    height: 800px;
+    /* background-color: #f4f4f4; */
+}
+.banner-content{
+    display: flex;
+    gap: 100px;
+    margin: 50px 0 100px;
+} 
+.left-content{
+    background-color: #ce0033;
+    width: 42%;
+    height: 130px;
+    border-bottom-right-radius: 100px;
+    margin-top: 50px;
+    position: relative;
+}
+.left-content .year{
+    font-size: 50px;
+    padding: 0 18px 0 380px;
+    font-weight: 600;
+    color: #fff;
+    border-bottom-right-radius: 100px;
+}
+.left-content h2{
+    font-size: 37px;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 20px;
+}
+.right-content,
+.bg-red{
+    width: 450px;
+    height: 450px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.right-content{
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-content p{
+    line-height: 34px;
+}
+.bg-red{
+    background-color: #ce0033;
+    position: absolute;
+    transform: rotate(5deg); 
+    top: -15px;
+    right: 40px;
+    z-index: -1;
+}
+.right-content .fa-sharp{
+    position: absolute;
+    font-size: 45px;
+}
+.right-content .fa-quote-left{
+    top: 25px;
+    left: 25px;
+    color: rgba(206, 0, 51, 0.4);
+}
+.right-content .fa-quote-right{
+    bottom: 25px;
+    right: 50px;
+    color: rgba(105, 104, 104, 0.4);
+}
+
+/* Section pedagogique */
+
+.container{
+    padding: 0 80px 50px 80px;
+    /* background: #fff; */
+}
+.ped-content{
+    display: flex;
+    gap: 45px;
+}
+.ped-content-left{
+    width: 500px;
+    height: 300px;
+}
+.ped-content-left video{
+    width: 100%;
+    height: 100%;
+}
+.ped-content-right{
+    width: 80%;
+    max-width: 500px;
+}
+.ped-content-right h3{
+    color: #ce0033;
+    font-size: 22px;
+    font-weight: bold;
+}
+.ped-content-right p{
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 10px;
+}
+.piliers-pedagogique{
+    padding-top: 80px;
+    display: flex;
+    gap: 50px;
+}
+.pil-ped-leftSide h3{
+    color: #ce0033;
+    font-size: 25px;
+    font-weight: bold;
+}
+.pil-ped-boxes{
+    margin-top: 45px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 300px);
+}
+.pil-ped-box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 0 20px;
+    height: 170px;
+    border-bottom: 5px solid #ce0033;
+
+}
+.pil-ped-box h4{
+    font-size: 12px;
+}
+.pil-ped-box p{
+    font-size: 12px;
+    margin: 8px 0;
+}
+.pil-ped-box .number{
+    color: #ce0033;
+    font-size: 38px;
+    font-weight: 600;
+}
+.pil-ped-rightSide .img{
+    width: 400px;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+.pil-ped-rightSide .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.pil-ped-rightSide .img-bg-red{
+    background-color: #ce0033;
+    width: 400px;
+    height: 680px;
+    border-radius: 20px;
+    position: absolute;
+    top: -19px;
+    right: -22px;
+    z-index: -1;
+}
+
+/* Section valeurs */
+
+#valeurs .valeurs-content{
+    display: flex;
+    gap: 70px;
+}
+#valeurs .valeurs-content .val-section-left{
+    max-width: 500px;
+}
+.val-section-left h3{
+    color: #ce0033;
+    font-size: 36px;
+    font-weight: 500;
+}
+.val-section-left p{
+    line-height: 1.8;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.val-section-left .btn-lg{
+    border: none;
+    padding: 10px 40px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #ddd;
+}
+.val-section-right{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+}
+.val-section-right .box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 5px;
+}
+.val-section-right .box span{
+    background-color: #F6D2DB;
+    color: #ce0033;
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.val-section-right .box-content h4{
+    font-size: 19px;
+    font-weight: 500;
+}
+.val-section-right .box-content p{
+    font-size: 14px;
+}
+
+/* Section red tape (bande rouge) */
+#chiffres {
+    margin-bottom: 40px;
+}
+#chiffres .red-tape{
+    background-color: #ce0033;
+    color: #FFF;
+    display: grid;
+    grid-gap: 70px;
+    grid-template-columns: repeat(3, 250px);
+    padding: 50px 0;
+    justify-content: center;
+}
+#chiffres .red-tape .red-tape-box{
+    text-align: center;
+}
+.red-tape .red-tape-box h3{
+    font-size: 39px;
+    font-weight: 700;
+}
+.red-tape .red-tape-box p{
+    font-size: 14px;
+}
+/* Section team */
+#team,
+#valeurs,
+#chiffres,
+#recrutement{
+    background-color: #FFF;
+}
+#team  p.para{
+    font-size: 24px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+#team .team-cards{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 60px;
+}
+.card-info{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 250px;
+    height: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+.card-info .card-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card-info .card-img img{
+    width: 100%;
+    height: 100%;
+}
+.card-info .name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.card-info .profession{
+    color: #ce0033;
+    font-weight: 600;
+    font-size: 15px;
+}
+.card-info p{
+    margin: 30px 0 20px 0;
+    color: #ddd;
+    font-size: 14px;
+}
+.card-info .socials-media{
+    display: flex;
+    gap: 15px;
+}
+.card-info .socials-media i{
+    font-size: 24px;
+    margin: 10px 0 15px 0;
+    color: #ce0033;
+    cursor: pointer;
+}
+/* Section Recrutement */
+#recrutement{
+    margin-top: 80px;
+}
+#recrutement .recru-content,
+#recrutement .offres-contact{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+#recrutement .recru-content .recu-content-left{
+    max-width: 900px;
+    width: 55%;
+    height: 300px;
+}
+#recrutement .recru-content .recu-content-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#recrutement .recru-content .recru-content-right{
+    width: 50%;
+    height: 300px;
+}
+.recru-content .recru-content-right h3{
+    color: #ce0033;
+    font-size: 19px;
+    font-weight: 600;
+}
+.recru-content .recru-content-right p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 13px;
+}
+#recrutement .offres-contact{
+    margin-top: 30px;
+    display: flex;
+}
+#recrutement .offres-contact{
+    display: flex;
+    justify-content: space-between;
+}
+#recrutement .offres-contact .offres{
+    background-color: #F9F4F4;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.offres-contact .offres h2{
+    color: #ce0033;
+    font-weight: 600;
+}
+.offres-contact .offres .offres-content .sec-1 h3{
+    font-size: 17px;
+    margin: 7px 0;
+    font-weight: 500;
+}
+.offres-contact .offres .offres-content .sec-1 h4{
+    margin: 10px 0 5px 0;
+    font-size: 14px;
+    color: #ce0033;
+    font-weight: 500;
+}
+.offres-contact .offres .offres-content .sec-2{
+    background-color: #fff;
+    padding: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 9px;
+    width: 150px;
+}
+.offres-contact .offres .offres-content .sec-2 ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 6px;
+}
+.offres-contact .offres .offres-content .sec-2 ul li .fa-solid {
+    color: #ce0033;
+    font-size: 14px;
+}
+.offres-contact .offres .offres-content .sec-2 ul li span{
+    font-size: 10px;
+}
+.offres-contact .offres .offres-content{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.offres-contact .offres .offres-content p{
+    max-width: 200px;
+    font-size: 13px;
+}
+.offres-contact .offres .btn{
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+}
+.offres-contact .offres .ul-2{
+    margin-top: 13px;
+}
+.offres-contact .offres .ul-2 li{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ce0033;
+    padding: 15px 30px 15px 0;
+}
+.offres-contact .offres .ul-2 li:last-child{
+    border-bottom: 1px solid #ce0033;;
+}
+.offres-contact .offres .ul-2 li .span-left{
+    font-weight: 600;
+    font-size: 15px;
+}
+.offres-contact .offres .ul-2 li .span-right{
+    background-color: #ce0033;
+    color: #FFF;
+    width: 25px;
+    height: 25px;
+    border-radius: 40px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offres-contact .offres .ul-2 li .span-right .fa-plus{
+    cursor: pointer;
+}
+.offres-contact .offres a{
+    color: #000;
+    text-decoration: underline;
+    text-align: end;
+    display: inline-block;
+    margin-top: 10px;
+}
+.offres-contact form {
+    width: 50%;
+}
+.offres-contact form .input-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.offres-contact form .input-group input:not(input[type="checkbox"]),
+.offres-contact form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    border: 1px solid #ddd;
+    resize: none;
+}
+.offres-contact form textarea {
+    margin-bottom: 12px;
+}
+.offres-contact form input[type="submit"]{
+    border: none;
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.offres-contact form input[type="file"]{
+    margin: 10px 0 20px;
+}
+.offres-contact form label{
+    font-size: 14px;
+}
+/* Section partenaires */
+#partenaires{
+    background-color: #FFF;
+}
+.partenaires{
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: center;
+    padding: 40px  0 100px 0;
+}
+.partenaires div{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.partenaires div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* Footer */
+footer{
+    padding-top: 70px;
+}
+footer .container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+footer .container .footer-box{
+    width: 300px;
+}
+footer .container .footer-box h3{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+footer .container .footer-box ul a{
+    display: block;
+    color: #7F7F7F;
+}
+footer .container .footer-box ul a{
+    margin-bottom: 6px;
+}
+footer .container .footer-box p{
+    color: #7F7F7F;
+}
+footer .container .footer-box .coordonnees-2{
+    margin-top: 23px;
+}
+footer .container .footer-box .input{
+    border: 1px solid #ddd;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+footer .container .footer-box .input input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+footer .container .footer-box .input button{
+    border: none;
+    background: #ce0033;
+    padding: 8px;
+    color: #FFF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+footer .container .footer-box .media{
+    margin-top: 20px;
+}
+footer .container .footer-box .media a{
+    margin-right: 18px;
+    font-size: 26px;
+}
+footer .container .footer-box .media .fa-twitter{
+    color: #00acee;
+}
+footer .container .footer-box .media .fa-facebook-f{
+    color: #3b5998;
+}
+footer .container .footer-box .media .fa-instagram{
+    color: #D23D24;
+}
+footer .container .footer-box .media .fa-youtube{
+    color: #FF0000;
+}
+footer .copyright{
+    background-color: #ce0033;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .copyright .para1{
+    font-size: 15px;
+    font-weight: 500;
+    color: #FFF;
+}
+footer .copyright .para2{
+    font-size: 12px;
+    color: #FFF;
+}
+footer .copyright .para2 .fa-heart{
+    color: #000;
+}
